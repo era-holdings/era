@@ -1,0 +1,126 @@
+.blueButton{
+    background-color: #388ed8 !important;
+    color: #ffffff !important;
+}
+.posRelative{
+    position: relative;
+}
+.posAbsolute{
+    position: absolute;
+}
+.widthAuto{
+    width: auto !important;
+}
+.heightAuto{
+    height: auto !important;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+#wrp {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#wrp #headerWrp {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    border-bottom: 1px solid #EFE9E9;
+}
+
+#wrp #headerWrp .title {
+    position: absolute;
+    top: 0px;
+    left: 60px;
+}
+
+
+#wrp .mainPnl{
+    height: calc(100% - 75px - 50px);
+}
+
+#wrp .mainPnl .narrow{
+    width: 5% !important;
+}
+
+#wrp .mainPnl .narrow *{
+    display: none;
+}
+
+#wrp .mainPnl .createPnl{
+    position: relative;
+    float: left;
+    width: 24%;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#wrp #cal{
+    position: relative;
+    float: left;
+    width: 71%;
+    height: 100%;
+}
+
+.calHeader{
+    background-color: #dddddd;
+    height: 60px;
+    padding-left: 15px;
+    line-height: 60px;
+}
+
+.timeZone{
+    position: absolute;
+    top: 14px;
+    right: 19px;
+}
+.timeZone select{
+    height: 34px !important;
+    width: 122px !important;
+    font-size: 11px;
+}
+.emailBackground{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 40px !important;
+    border-color: transparent !important;
+    background-color: #dddddd !important;
+}
+.emailAddButton{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width: 50px !important;
+    color: #ffffff !important;
+}
+.invitee{
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 5px;
+}
+.profileImg{
+    width: 26px;
+}
+
+#wrp #footerWrp {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #EFE9E9;
+}
+
+#wrp #footerWrp .title {
+    position: absolute;
+    top: 8px;
+    left: 60px;
+}
