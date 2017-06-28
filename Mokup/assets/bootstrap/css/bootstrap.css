@@ -7430,6 +7430,10 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   width: 75% !important;
 }
 
+.w-85 {
+  width: 85% !important;
+}
+
 .w-100 {
   width: 100% !important;
 }
@@ -7805,7 +7809,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .pl-5 {
-  padding-left: 3rem !important;
+  padding-left: 4.5rem !important;
 }
 
 .px-5 {
