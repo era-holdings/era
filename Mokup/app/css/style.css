@@ -2,6 +2,11 @@
     background-color: #388ed8 !important;
     color: #ffffff !important;
 }
+.greenButton{
+    background-color: #34d84e !important;
+    color: #ffffff !important;
+}
+
 .posRelative{
     position: relative;
 }
@@ -47,7 +52,7 @@
 }
 
 #wrp .mainPnl .narrow{
-    width: 5% !important;
+    width: 3% !important;
 }
 
 #wrp .mainPnl .narrow *{
@@ -64,11 +69,14 @@
     box-sizing: border-box;
 }
 
-#wrp #cal{
+#wrp .pickPnl{
     position: relative;
     float: left;
-    width: 71%;
+    width: 51%;
     height: 100%;
+}
+#wrp #loc{
+    width: 69%;
 }
 
 .calHeader{

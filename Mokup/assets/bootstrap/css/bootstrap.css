@@ -7418,6 +7418,36 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   clip: auto;
 }
 
+
+.width50{
+  width: 50px !important;
+}
+.width60{
+  width: 60px !important;
+}
+.width80{
+  width: 80px !important;
+}
+
+
+.width100{
+  width: 100px !important;
+}
+
+.width150{
+  width: 150px !important;
+}
+.width200{
+  width: 200px !important;
+}
+
+
+
+
+.w-14 {
+  width: 14% !important;
+}
+
 .w-25 {
   width: 25% !important;
 }

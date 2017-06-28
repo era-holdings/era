@@ -36,6 +36,9 @@
             </label>
             <input type="text" class="form-control mb-5" placeholder="Subject ex: Lunch with Rachel">
 
+            <textarea class="form-control mb-5" placeholder="Add notes"></textarea>
+
+
             <div class="posRelative">
                 <input type="text" class="form-control pl-5" placeholder="Invitee name or mail">
 
@@ -199,10 +202,10 @@
                 </div>
 
                 <input type="button" class="form-control font-weight-bold mb-5" value="+ Pick a date"
-                       onclick="$('#cal').addClass('show');$('#column1').addClass('narrow');$('#column3').removeClass('show')">
+                       onclick="$('#cal').addClass('show');$('#column3').removeClass('show');;$('#column4').removeClass('show')">
 
                 <input type="button" class="form-control blueButton" value="Suggest places"
-                       onclick="$('#column3').addClass('show');$('#column1').removeClass('narrow');$('#cal').removeClass('show')">
+                       onclick="$('#column3').addClass('show');$('#cal').removeClass('show')">
 
             </div>
 
@@ -291,13 +294,110 @@
                 </div>
 
                 <input type="button" class="form-control font-weight-bold mb-5" value="+ Pick a place"
-                       onclick="$('#cal').addClass('show')" >
+                       onclick="$('#loc').addClass('show');$('#column1').addClass('narrow');$('#column2').addClass('narrow');$('#column4').removeClass('show')" >
 
-                <input type="button" class="form-control blueButton" value="Suggest tasks" >
+                <input type="button" class="form-control blueButton" value="Suggest tasks"
+                       onclick="$('#column4').addClass('show');$('#loc').removeClass('show');$('#column1').removeClass('narrow');$('#column2').removeClass('narrow')" >
 
             </div>
         </div>
         <div id="column4" class="createPnl hide">
+            <label class="mb-5">
+                Suggest tasks
+            </label>
+
+            <div class="posRelative">
+                <input type="text" class="form-control pl-5 mb-4" placeholder="Distribut list of tasks">
+
+                <div class="form-control emailBackground">
+                    <i class="profileImg glyphicon glyphicon-check"></i>
+                </div>
+                <input type="button" class="form-control emailAddButton blueButton" value="Add">
+
+                <div id="invited" class="mb-5">
+                    <div class="form-control heightAuto">
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0">
+                                            Tent
+                                        </label>
+                                    </td>
+                                    <td >
+                                        <i class="profileImg glyphicon glyphicon-remove"></i>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0">
+                                            Salads
+                                        </label>
+                                    </td>
+                                    <td >
+                                        <i class="profileImg glyphicon glyphicon-remove"></i>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0">
+                                            Drinks
+                                        </label>
+                                    </td>
+                                    <td >
+                                        <i class="profileImg glyphicon glyphicon-remove"></i>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0">
+                                            BBQ
+                                        </label>
+                                    </td>
+                                    <td >
+                                        <i class="profileImg glyphicon glyphicon-remove"></i>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="button" class="form-control greenButton" value="Finish">
+            </div>
+
 
         </div>
         <div id="cal" class="pickPnl hide">
@@ -306,253 +406,47 @@
                     Calendar
                 </label>
             </div>
+            <div class="d-inline-block" style="width: 130px;">
+                <img src="../assets/images/calWidget2.jpg" width="125">
+            </div>
+            <div class="d-inline-block" style="width: 530px">
+                <img src="../assets/images/calWidget3.jpg" width="520" >
+            </div>
+            <div class="actionBtn float-right p-2" >
+                <input type="button" onclick="$('#cal').removeClass('show')"
+                       class="form-control width100 d-inline-block" value="Cancel">
 
+                <input type="button" onclick="$('#cal').removeClass('show')"
+                       class="form-control width100 d-inline-block blueButton" value="Add">
+            </div>
         </div>
         <div id="loc" class="pickPnl hide">
             <div class="calHeader">
                 <label>
-                    Calendar
+                    Places
                 </label>
+            </div>
+            <div class="d-inline-block p-2" style="width: 160px;">
+                <input type="text" class="form-control mb-3" placeholder="search for places">
+                <input type="button" class="form-control width50 d-inline-block blueButton float-right" value="Add">
+
+            </div>
+            <div class="d-inline-block" style="width: 750px">
+                <img src="../assets/images/googleMap.jpg" width="750" >
+            </div>
+            <div class="actionBtn float-right p-2" >
+                <input type="button"
+                       onclick="$('#loc').removeClass('show');$('#column1').removeClass('narrow');$('#column2').removeClass('narrow')"
+                       class="form-control width100 d-inline-block" value="Cancel">
+                <input type="button"
+                       onclick="$('#loc').removeClass('show');$('#column1').removeClass('narrow');$('#column2').removeClass('narrow')"
+                       class="form-control width100 d-inline-block blueButton" value="Add">
             </div>
 
         </div>
 
-
-
-
-        <!--<div class="hide">-->
-        <!--<div id="formWrp">-->
-        <!--<h2 id="groupName" class="subTitle marginBottom10">-->
-        <!--Let's Meet-->
-        <!--</h2>-->
-        <!--<div id="navBar">-->
-        <!--<div class="selected" name="contactsWrp" onclick="phonebook.app.updateDisplayPanel('contactsWrp')">-->
-        <!--Show Polls-->
-        <!--</div>-->
-        <!--<div name="createContactWrp" onclick="phonebook.app.updateDisplayPanel('createPollStep1Wrp')">-->
-        <!--Create Poll-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="clear marginBottom5"></div>-->
-        <!--<div id="contactsWrp" name="displayPanel">-->
-        <!--<div id="contactsList">-->
-        <!--<table cellpadding="0" cellspacing="0" id="contactsTable" class="contactsTable">-->
-        <!--<tHead>-->
-        <!--<td>title</td>-->
-        <!--<td></td>-->
-        <!--</tHead>-->
-        <!--<tbody id="contactsTbody">-->
-
-        <!--</tbody>-->
-        <!--</table>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div id="createPollStep1Wrp" name="displayPanel" class="hide">-->
-        <!--<h3 class="subTitle marginBottom10">-->
-        <!--Step 1 of 3-->
-        <!--</h3>-->
-        <!--<h2 class="subTitle marginBottom10">-->
-        <!--What’s the occasion?-->
-        <!--</h2>-->
-        <!--<div class="formTitle">-->
-        <!--Title:-->
-        <!--</div>-->
-        <!--<div class="inputTextWrp" class="marginBottom5">-->
-        <!--<input type="text" id="textTitle" required="true" class="inputText" placeholder="Enter title">-->
-        <!--</div>-->
-        <!--<div class="formTitle">-->
-        <!--Location:-->
-        <!--<span id="btnAddLocations" class="btn" alt="Click To add more locations">+</span>-->
-        <!--</div>-->
-        <!--<div class="inputTextPhonesWrp marginBottom5">-->
-        <!--<div id="locationsWrp">-->
-        <!--<input type="text" name="textLocation" class="inputText" placeholder="Enter location (optional)">-->
-        <!--</div>-->
-
-        <!--</div>-->
-        <!--<div class="formTitle">-->
-        <!--Notes:-->
-        <!--</div>-->
-        <!--<div class="inputTextWrp" class="marginBottom5">-->
-        <!--<input type="text" id="textNotes" class="inputText" placeholder="Enter notes (optional)">-->
-        <!--</div>-->
-
-        <!--<input type="button" id="btnCreatePoll" value="Next" >-->
-        <!--</div>-->
-        <!--<div id="createPollStep2Wrp" name="displayPanel" class="hide">-->
-        <!--<h3 class="subTitle marginBottom10">-->
-        <!--Step 2 of 3-->
-        <!--</h3>-->
-        <!--<h2 class="subTitle marginBottom10">-->
-        <!--Choose time that suits you-->
-        <!--</h2>-->
-        <!--<div class="calendar">-->
-
-        <!--<div class="month">-->
-        <!--<ul>-->
-        <!--<li class="prev">&#10094;</li>-->
-        <!--<li class="next">&#10095;</li>-->
-        <!--<li style="text-align:center">-->
-        <!--August<br>-->
-        <!--<span style="font-size:18px">2017</span>-->
-        <!--</li>-->
-        <!--</ul>-->
-        <!--</div>-->
-
-        <!--<ul class="weekdays">-->
-        <!--<li>Mo</li>-->
-        <!--<li>Tu</li>-->
-        <!--<li>We</li>-->
-        <!--<li>Th</li>-->
-        <!--<li>Fr</li>-->
-        <!--<li>Sa</li>-->
-        <!--<li>Su</li>-->
-        <!--</ul>-->
-
-        <!--<ul class="days">-->
-        <!--<li>1</li>-->
-        <!--<li>2</li>-->
-        <!--<li>3</li>-->
-        <!--<li>4</li>-->
-        <!--<li>5</li>-->
-        <!--<li>6</li>-->
-        <!--<li><span class="active">7</span></li>-->
-        <!--<li>8</li>-->
-        <!--<li>9</li>-->
-        <!--<li><span class="active">10</span></li>-->
-        <!--<li>11</li>-->
-        <!--<li>12</li>-->
-        <!--<li>13</li>-->
-        <!--<li>14</li>-->
-        <!--<li>15</li>-->
-        <!--<li>16</li>-->
-        <!--<li>17</li>-->
-        <!--<li>18</li>-->
-        <!--<li>19</li>-->
-        <!--<li>20</li>-->
-        <!--<li>21</li>-->
-        <!--<li>22</li>-->
-        <!--<li>23</li>-->
-        <!--<li>24</li>-->
-        <!--<li>25</li>-->
-        <!--<li>26</li>-->
-        <!--<li>27</li>-->
-        <!--<li>28</li>-->
-        <!--<li>29</li>-->
-        <!--<li>30</li>-->
-        <!--<li>31</li>-->
-        <!--</ul>-->
-
-        <!--</div>-->
-
-        <!--<div id="addHoursPnl" class="addHoursPnl">-->
-        <!--<div class="formTitle">-->
-        <!--<span id="btnAddHours" class="btn" alt="Click To ..." style="text-decoration: underline">-->
-        <!--Choose diffrent hours for each date-->
-        <!--</span>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div id="hoursWrp" class="hoursWrp hide"  >-->
-        <!--<div id="specificHour" class="hide">-->
-        <!--07 AUG-->
-        <!--</div>-->
-        <!--<div id="sameHour" >-->
-        <!--Same hours for all Dates-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<select>-->
-        <!--<option value="0800" selected>08:00</option>-->
-        <!--</select>-->
-        <!----->
-        <!--<select>-->
-        <!--<option value="1000" selected>10:00</option>-->
-        <!--</select>-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<select>-->
-        <!--<option value="1300" selected>13:00</option>-->
-        <!--</select>-->
-        <!----->
-        <!--<select>-->
-        <!--<option value="1500" selected>15:00</option>-->
-        <!--</select>-->
-        <!--</div>-->
-
-        <!--<div id="showDifferentHours" >-->
-        <!--<div class="formTitle">-->
-        <!--<span id="btnShowDiffrentHours" class="btn" alt="Click To ..." style="text-decoration: underline">-->
-        <!--Choose diffrent hours for each date-->
-        <!--</span>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div id="differentHours"  class="hide">-->
-        <!--<hr>-->
-
-        <!--<div>-->
-        <!--10 AUG-->
-        <!--</div>-->
-        <!--<div>-->
-        <!--<select>-->
-        <!--<option value="2100" selected>21:00</option>-->
-        <!--</select>-->
-        <!----->
-        <!--<select>-->
-        <!--<option value="2200" selected>22:00</option>-->
-        <!--</select>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
-        <!--<input type="button" id="btnContinuePoll" value="Next" >-->
-
-        <!--</div>-->
-        <!--<div id="createPollStep3Wrp" name="displayPanel" class="hide">-->
-        <!--<h3 class="subTitle marginBottom10">-->
-        <!--Step 3 of 3-->
-        <!--</h3>-->
-        <!--<h2 class="subTitle marginBottom10">-->
-        <!--Who are you?-->
-        <!--</h2>-->
-        <!--<div class="formTitle">-->
-        <!--Name:-->
-        <!--</div>-->
-        <!--<div class="inputTextWrp" class="marginBottom5">-->
-        <!--<input type="text" id="textName" required="true" class="inputText" placeholder="Enter name">-->
-        <!--</div>-->
-        <!--<div class="formTitle">-->
-        <!--Email:-->
-        <!--</div>-->
-        <!--<div class="inputTextWrp" class="marginBottom5">-->
-        <!--<input type="text" id="textEmail" class="inputText" placeholder="Enter Email">-->
-        <!--</div>-->
-
-        <!--<input type="button" id="btnFinishPoll" value="Next" >-->
-        <!--</div>-->
-
-        <!--<div id="showPollStep1Wrp" name="displayPanel" class="hide">-->
-        <!--<h2 class="subTitle marginBottom10">-->
-        <!--Who are you?-->
-        <!--</h2>-->
-        <!--<div class="formTitle">-->
-        <!--Name:-->
-        <!--</div>-->
-        <!--<div class="inputTextWrp" class="marginBottom5">-->
-        <!--<input type="text" id="textPollName" required="true" class="inputText" placeholder="Enter name">-->
-        <!--</div>-->
-        <!--<div class="formTitle">-->
-        <!--Email:-->
-        <!--</div>-->
-        <!--<div class="inputTextWrp" class="marginBottom5">-->
-        <!--<input type="text" id="textPollEmail" class="inputText" placeholder="Enter Email">-->
-        <!--</div>-->
-
-        <!--<input type="button" id="btnStep1Poll" value="Next" >-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-
     </div>
-    <div class="clear"></div>
+
     <div id="footerWrp">
 
     </div>
