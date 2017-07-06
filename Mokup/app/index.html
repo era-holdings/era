@@ -22,13 +22,447 @@
         <h1 class="title">
             ERA
         </h1>
+
+        <div class="searchTxt" id="serTxtWrp">
+            <input type="text"  class=" form-control" placeholder="Search">
+            <i class="profileImg glyphicon glyphicon-search serIcon"></i>
+        </div>
+
+
+        <input type="text" id="cancelBtn" class="cancelBtn form-control hide" placeholder="Cancel"
+               onclick="$('#allEvents').removeClass('hide');$('#serTxtWrp').removeClass('hide');$('#createEvent').addClass('hide');$('#cancelBtn').addClass('hide');$('#confirmEvent').addClass('hide');">
     </div>
 
-    <div id="allEvents" class="mainPnl  hide">
+    <div id="allEvents" class="mainPnl">
 
+        <div id="pending" class="dashBoardPnl">
+
+            <label class="mb-5 topTit" >
+                Pending
+            </label>
+
+            <div class="evetnsWrp">
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/photo.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Go to movies
+                                    </div>
+                                    <div class="createdBy">
+                                        created by Jon Snow 42 minutes ago
+                                    </div>
+
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Today
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Cinema City
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            6 invitees (3 confirmed, 1 declined, 2 pending)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/moran.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Lunch with David
+                                    </div>
+                                    <div class="createdBy">
+                                        created by Sarit Levi 1 days ago
+                                    </div>
+
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            2 dates
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            3 places
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            1 invitees (1 pending)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/rachel.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Graduation Party
+                                    </div>
+                                    <div class="createdBy">
+                                        created by Elinor Cohen 3 hours ago
+                                    </div>
+
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Tue, Jun, 27
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Tel Aviv University
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            13 invitees (1 confirmed, 3 declined, 9 pending)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/photo.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Surprise party
+                                    </div>
+                                    <div class="createdBy">
+                                        created by Israel Dvir 3 hours ago
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Mon, Jul, 4
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Sport Tech
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            4 invitees (2 confirmed, 0 declined, 2 pending)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+        <div id="today" class="dashBoardPnl">
+
+            <label class="mb-5 topTit">
+                Today
+            </label>
+            <div class="evetnsWrp">
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/photo.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Play Tennis
+                                    </div>
+                                    <div class="createdBy invisible">
+                                        created by Elinor Cohen 3 hours ago
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Today
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Sport Tech
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            Moshe David (1 confirmed, 0 declined)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/rachel.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Go to Lunch
+                                    </div>
+                                    <div class="createdBy invisible">
+                                        created by Elinor Cohen 3 hours ago
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Today
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Aroma Tel Aviv
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            3 confirmed (3 confirmed, 2 declined)
+
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+            </div>
+
+        </div>
+        <div id="upcoming" class="dashBoardPnl" style="border-right: 0px ">
+
+            <label class="mb-5 topTit">
+                Upcoming
+            </label>
+            <div class="evetnsWrp">
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/photo.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Surprise party
+                                    </div>
+                                    <div class="createdBy invisible">
+                                        created by Elinor Cohen 3 hours ago
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Mon, Jul, 4
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Sport Tech
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            Moshe David (1 confirmed, 1 declined)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/gil.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Go to Lunch
+                                    </div>
+                                    <div class="createdBy invisible">
+                                        created by Elinor Cohen 3 hours ago
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Sun, Jul, 16
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Aroma Tel Aviv
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            3 confirmed (3 confirmed, 0 declined)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="eventBlock">
+
+                    <div class="options">
+                        <table>
+                            <tr>
+                                <td class="pr-4 align-text-top">
+                                    <img src="../assets/images/rachel.jpg" class="profImage"></i>
+                                </td>
+                                <td>
+                                    <div class="tit" onclick="$('#allEvents').addClass('hide');$('#confirmEvent').removeClass('hide');$('#serTxtWrp').addClass('hide');$('#cancelBtn').removeClass('hide');">
+                                        Graduation Party
+                                    </div>
+                                    <div class="createdBy invisible">
+                                        created by Elinor Cohen 3 hours ago
+                                    </div>
+
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-calendar"></i>
+
+                                        <label class="custom-select-sm">
+                                            Date: Tue, Jun, 27
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+
+                                        <label class="custom-select-sm">
+                                            Place: Tel Aviv University
+                                        </label>
+                                    </div>
+                                    <div class="eveItems">
+                                        <i class="profileImg glyphicon glyphicon-user"></i>
+                                        <label class="custom-select-sm">
+                                            13 confirmed (13 confirmed, 3 declined)
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+                <hr>
+
+            </div>
+
+        </div>
+        <input type="button" class="form-control greenButton createEve" value="+" title="Create an event"
+               onclick="$('#allEvents').addClass('hide');$('#serTxtWrp').addClass('hide');$('#createEvent').removeClass('hide');$('#cancelBtn').removeClass('hide');">
     </div>
 
-    <div id="createEvent" class="mainPnl">
+    <div id="createEvent" class="mainPnl hide">
+
         <div id="column1" class="createPnl">
 
             <label class="mb-5">
@@ -101,29 +535,6 @@
 
                         </div>
 
-                        <div class="invitee">
-                            <table>
-                                <tr>
-                                    <td>
-                                        <i class="profileImg glyphicon glyphicon-user"></i>
-                                    </td>
-                                    <td class="w-85">
-                                        <label class="m-0 d-block">
-                                            Matty Rotter
-                                        </label>
-                                        <label class="custom-select-sm">
-                                            matty@yahoo.co.il
-                                        </label>
-
-                                    </td>
-                                    <td >
-                                        <i class="profileImg glyphicon glyphicon-remove"></i>
-                                    </td>
-                                </tr>
-                            </table>
-
-
-                        </div>
 
                     </div>
                 </div>
@@ -132,6 +543,7 @@
             </div>
 
         </div>
+
         <div id="column2" class="createPnl hide">
             <label class="mb-5">
                 Suggest Dates
@@ -301,6 +713,7 @@
 
             </div>
         </div>
+
         <div id="column4" class="createPnl hide">
             <label class="mb-5">
                 Suggest tasks
@@ -322,7 +735,7 @@
                                     <td>
                                         <i class="profileImg glyphicon glyphicon-unchecked"></i>
                                     </td>
-                                    <td class="w-85">
+                                    <td class="w-85 lineHeight40">
                                         <label class="m-0">
                                             Tent
                                         </label>
@@ -342,7 +755,7 @@
                                     <td>
                                         <i class="profileImg glyphicon glyphicon-unchecked"></i>
                                     </td>
-                                    <td class="w-85">
+                                    <td class="w-85 lineHeight40">
                                         <label class="m-0">
                                             Salads
                                         </label>
@@ -362,7 +775,7 @@
                                     <td>
                                         <i class="profileImg glyphicon glyphicon-unchecked"></i>
                                     </td>
-                                    <td class="w-85">
+                                    <td class="w-85 lineHeight40">
                                         <label class="m-0">
                                             Drinks
                                         </label>
@@ -381,7 +794,7 @@
                                     <td>
                                         <i class="profileImg glyphicon glyphicon-unchecked"></i>
                                     </td>
-                                    <td class="w-85">
+                                    <td class="w-85 lineHeight40">
                                         <label class="m-0">
                                             BBQ
                                         </label>
@@ -395,11 +808,13 @@
                     </div>
                 </div>
 
-                <input type="button" class="form-control greenButton" value="Finish">
+                <input type="button" class="form-control greenButton" value="Finish"
+                       onclick="$('#allEvents').removeClass('hide');$('#serTxtWrp').removeClass('hide');$('#createEvent').addClass('hide');$('#cancelBtn').addClass('hide');$('#confirmEvent').addClass('hide');">
             </div>
 
 
         </div>
+
         <div id="cal" class="pickPnl hide">
             <div class="calHeader">
                 <label>
@@ -420,6 +835,7 @@
                        class="form-control width100 d-inline-block blueButton" value="Add">
             </div>
         </div>
+
         <div id="loc" class="pickPnl hide">
             <div class="calHeader mb-3">
                 <label>
@@ -499,8 +915,417 @@
 
     </div>
 
-    <div id="footerWrp">
+    <div id="confirmEvent" class="mainPnl hide">
 
+        <div id="confirmTopPnl">
+            <div class="eveConfirmTit">
+                Go to movies
+            </div>
+
+            <div class="invitees">
+                <table>
+                    <tr>
+                        <td style="padding-right: 100px">
+                            <label>
+                                Confirmed
+                            </label>
+                            <div>
+                                <img src="../assets/images/photo.jpg" class="profImage"></img>
+                                <img src="../assets/images/moran.jpg" class="profImage" style="margin-left: -30px"></img>
+                                <img src="../assets/images/rachel.jpg" class="profImage" style="margin-left: -30px"></img>
+                            </div>
+                        </td>
+                        <td style="padding-right: 100px">
+                            <label>
+                                Declined
+                            </label>
+                            <div>
+                                <img src="../assets/images/photo.jpg" class="profImage"></img>
+                                <img src="../assets/images/gil.jpg" class="profImage" style="margin-left: -30px"></img>
+                            </div>
+                        </td>
+                        <td >
+                            <label>
+                                Pending
+                            </label>
+                            <div>
+                                <img src="../assets/images/photo.jpg" class="profImage"></img>
+                                <img src="../assets/images/moran.jpg" class="profImage" style="margin-left: -30px"></img>
+                                <img src="../assets/images/gil.jpg" class="profImage" style="margin-left: -30px"></img>
+                                <img src="../assets/images/rachel.jpg" class="profImage" style="margin-left: -30px"></img>
+                                <img src="../assets/images/moran.jpg" class="profImage" style="margin-left: -30px"></img>
+                                <img src="../assets/images/gil.jpg" class="profImage" style="margin-left: -30px"></img>
+                                <img src="../assets/images/rachel.jpg" class="profImage" style="margin-left: -30px"></img>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="confirmBtns posAbsolute">
+                <input type="button" class="form-control width100 d-inline-block blueButton" value="Edit event">
+                <input type="button" class="form-control width100 d-inline-block blueButton" value="Clone event">
+                <input type="button" class="form-control width100 d-inline-block blueButton" value="Share link">
+            </div>
+        </div>
+
+        <div class="createPnl">
+            <label class="mb-5">
+                <i class="profileImg glyphicon glyphicon-calendar"></i>
+                Dates
+            </label>
+
+            <div class="posRelative">
+
+                <div class="mb-5">
+                    <div class="form-control heightAuto">
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0 d-block">
+                                            Today
+                                        </label>
+                                        <label class="custom-select-sm">
+                                            1:00 <b>pm</b> - 3:00 <b>pm</b>
+                                        </label>
+
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-check"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0 d-block">
+                                            Thu, Jun 29
+                                        </label>
+                                        <label class="custom-select-sm">
+                                            1:30 <b>pm</b> - 5:00 <b>pm</b>
+                                        </label>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0 d-block">
+                                            Sat Jul 4
+                                        </label>
+                                        <label class="custom-select-sm">
+                                            1:30 <b>pm</b> - 5:00 <b>pm</b>
+                                        </label>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0 d-block">
+                                            Decline Event
+                                        </label>
+                                        <label class="custom-select-sm">
+                                            I am not attanding
+                                        </label>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="createPnl">
+            <label class="mb-5">
+                <i class="profileImg glyphicon glyphicon-map-marker"></i>
+                Places
+            </label>
+
+            <div class="posRelative">
+
+                <div class="mb-5">
+                    <div class="form-control heightAuto">
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0 d-block">
+                                            Madison Square Garden
+                                        </label>
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+                                        <label class="custom-select-sm">
+                                            4 Pennsylvenia, New York, USA
+                                        </label>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-check"></i>
+                                    </td>
+                                    <td class="w-100">
+                                        <label class="m-0 d-block">
+                                            Central Park
+                                        </label>
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+                                        <label class="custom-select-sm">
+                                            Manhattan, New York, NY, USA
+                                        </label>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-check"></i>
+                                    </td>
+                                    <td class="w-85">
+                                        <label class="m-0 d-block">
+                                            Chrysler Building
+                                        </label>
+                                        <i class="profileImg glyphicon glyphicon-map-marker"></i>
+                                        <label class="custom-select-sm">
+                                            405 Lexington Ave, New York, USA
+                                        </label>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="createPnl">
+            <label class="mb-5">
+                <i class="profileImg glyphicon glyphicon-tasks"></i>
+                Tasks
+            </label>
+
+            <div class="posRelative">
+
+                <div id="invited" class="mb-5">
+                    <div class="form-control heightAuto">
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-check"></i>
+                                    </td>
+                                    <td class="w-85 lineHeight40" >
+                                        <label class="m-0" style="text-decoration: line-through">
+                                            Tent
+                                        </label>
+                                        &nbsp;&nbsp;<img src="../assets/images/rachel.jpg" class="profTaskImage"></img>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85 lineHeight40">
+                                        <label class="m-0">
+                                            Salads
+                                        </label>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </div>
+
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-unchecked"></i>
+                                    </td>
+                                    <td class="w-85 lineHeight40">
+                                        <label class="m-0">
+                                            Drinks
+                                        </label>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </div>
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-check"></i>
+                                    </td>
+                                    <td class="w-85 lineHeight40">
+                                        <label class="m-0" style="text-decoration: line-through ">
+                                            Drinks
+                                        </label>
+                                        &nbsp;&nbsp;<img src="../assets/images/moran.jpg" class="profTaskImage"></img>
+                                    </td>
+
+                                </tr>
+                            </table>
+
+
+                        </div>
+                        <div class="invitee">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="profileImg glyphicon glyphicon-check"></i>
+                                    </td>
+                                    <td class="w-85 lineHeight40">
+                                        <label class="m-0" >
+                                            BBQ
+                                        </label>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="createPnl">
+            <label class="mb-5">
+                <i class="profileImg glyphicon glyphicon-envelope"></i>
+                Messages
+            </label>
+
+            <div class="posRelative">
+
+                <div id="invited" class="mb-5">
+                    <div class="form-control heightAuto">
+                        <div>
+                            <table class="messTbl">
+                                <tr>
+                                    <td class="pr-4">
+                                        <img src="../assets/images/rachel.jpg" class="profMessImage"></img>
+                                    </td>
+                                    <td>
+                                        <span class="smaller">Rachel &nbsp;&nbsp; 11 min ago</span>
+                                        <div class="messWrp">
+                                            Lets meet !!!
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                            </table>
+
+                            <table class="messTbl">
+                                <tr>
+                                    <td class="pr-4">
+                                        <img src="../assets/images/moran.jpg" class="profMessImage"></img>
+                                    </td>
+                                    <td>
+                                        <span class="smaller">Rachel &nbsp;&nbsp; 8 min ago</span>
+                                        <div class="messWrp">
+                                            What's up people ???
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                            </table>
+
+                            <table class="messTbl">
+                                <tr>
+                                    <td class="pr-4">
+                                        <img src="../assets/images/photo.jpg" class="profMessImage"></img>
+                                    </td>
+                                    <td>
+                                        <span class="smaller">Eli &nbsp;&nbsp; 4 min ago</span>
+                                        <div class="messWrp">
+                                            I am in favor !!!
+                                        </div>
+                                    </td>
+
+
+                                </tr>
+                            </table>
+
+                            <div class="posRelative">
+                                <textarea class="form-control " placeholder="Add notes"></textarea>
+                                <input type="button" class="form-control blueButton addMess" value="Add">
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footerWrp" class="small align-content-sm-center">
+        © 2017 ERA - All rights reserved.
     </div>
 
 </div>
