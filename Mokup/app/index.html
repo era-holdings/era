@@ -23,8 +23,8 @@
             ERA
         </h1>
 
-        <div class="searchTxt" id="serTxtWrp">
-            <input type="text"  class=" form-control" placeholder="Search">
+        <div class="searchTxt hide" id="serTxtWrp">
+            <input type="text"  class=" form-control " placeholder="Search">
             <i class="profileImg glyphicon glyphicon-search serIcon"></i>
         </div>
 
@@ -33,7 +33,81 @@
                onclick="$('#allEvents').removeClass('hide');$('#serTxtWrp').removeClass('hide');$('#createEvent').addClass('hide');$('#cancelBtn').addClass('hide');$('#confirmEvent').addClass('hide');">
     </div>
 
-    <div id="allEvents" class="mainPnl">
+    <div id="signUpWrp" class="mainPnl posRelative hide">
+
+        <div style="padding: 20px 8px 8px 8px;margin: 30px auto;width: 60%; height: 400px; border:1px solid; border-radius: 6px; text-align: center">
+            <label class="mb-3 topTit d-block" >
+                Sign Up
+            </label>
+            <hr>
+            <input type="button" class="form-control  blueButton w-45 d-inline-block" value="Continue with Google">
+            <input type="button" class="form-control blueButton w-45 d-inline-block mb-5" value="Continue with Facebook">
+
+            <div>
+                or
+                <input type="text" class="form-control mb-5" placeholder="Email">
+                <input type="text" class="form-control mb-5" placeholder="Password">
+                <input type="button" class="form-control blueButton w-25 d-inline-block mb-5" value="Create"
+                       onclick="$('#allEvents').removeClass('hide');$('#serTxtWrp').removeClass('hide');$('#signUpWrp').addClass('hide')">
+            </div>
+
+            <hr>
+            <span >
+                Do you already have an account? <span
+                    onclick="$('#loginWrp').removeClass('hide');$('#signUpWrp').addClass('hide')"
+                    style="cursor: pointer;text-decoration: underline">Log in</span>
+            </span>
+        </div>
+
+    </div>
+
+    <div id="loginWrp" class="mainPnl posRelative">
+
+        <div style="padding: 20px 8px 8px 8px;margin: 30px auto;width: 60%; height: 440px; border:1px solid; border-radius: 6px; text-align: center">
+            <label class="mb-3 topTit d-block" >
+                Login
+            </label>
+            <hr>
+            <input type="button" class="form-control  blueButton w-45 d-inline-block" value="Continue with Google">
+            <input type="button" class="form-control blueButton w-45 d-inline-block mb-5" value="Continue with Facebook">
+
+            <div>
+                or
+                <input type="text" class="form-control mb-5" placeholder="Email">
+                <input type="text" class="form-control mb-5" placeholder="Password">
+                <input type="button" class="form-control  blueButton w-25 d-inline-block" value="Forgot Password"
+                       onclick="$('#ForgotPasswordWrp').removeClass('hide');$('#loginWrp').addClass('hide')">
+                <input type="button" class="form-control blueButton w-25 d-inline-block mb-5" value="Login"
+                       onclick="$('#allEvents').removeClass('hide');$('#serTxtWrp').removeClass('hide');$('#loginWrp').addClass('hide')">
+            </div>
+
+            <hr>
+            <span style="cursor: pointer;text-decoration: underline"
+                  onclick="$('#signUpWrp').removeClass('hide');$('#loginWrp').addClass('hide')">
+                Sign Up
+            </span>
+        </div>
+
+    </div>
+
+    <div id="ForgotPasswordWrp" class="mainPnl hide posRelative">
+
+        <div style="padding: 20px 8px 8px 8px;margin: 30px auto;width: 60%; height: 400px; border:1px solid; border-radius: 6px; text-align: center">
+            <label class="mb-3 topTit d-block" >
+                Forgot Password
+            </label>
+            <hr>
+            <div>
+                <input type="text" class="form-control mb-5" placeholder="Email">
+                <input type="button" class="form-control blueButton w-25 d-inline-block mb-5" value="Reset Password"
+                       onclick="$('#loginWrp').removeClass('hide');$('#ForgotPasswordWrp').addClass('hide')">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="allEvents" class="mainPnl hide">
 
         <div id="pending" class="dashBoardPnl">
 
@@ -470,7 +544,14 @@
             </label>
             <input type="text" class="form-control mb-5" placeholder="Subject ex: Lunch with Rachel">
 
-            <textarea class="form-control mb-5" placeholder="Add notes"></textarea>
+            <textarea class="form-control mb-2" placeholder="Add notes"></textarea>
+
+            <div class="mb-4">
+                Confidential: <input type="checkbox">
+
+                &nbsp;&nbsp;
+                One on One: <input type="checkbox">
+            </div>
 
 
             <div class="posRelative">
@@ -532,12 +613,12 @@
                                 </tr>
                             </table>
 
-
                         </div>
-
 
                     </div>
                 </div>
+
+
 
                 <input type="button" class="form-control blueButton" value="Suggest dates and places" onclick="$('#column2').addClass('show')">
             </div>
